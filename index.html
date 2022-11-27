@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user'
+    s device -->
 
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +17,51 @@
   </style>
 </head>
 <body>
+    <main>
+        <section class="header">
+            <h1>Notifications </h1>
+            <p class="num-nots">3</p>
+            <p class="nots-read">Mark all as read</p>
+        </section>
 
-  Notifications 3
+        <section class="content">
 
-  Mark all as read
+            <div class="notifs non-seen">
+                <img src="./assets/images/avatar-mark-webber.webp" alt="/" class="nots-img--user">
+                <p class="nots-actions"><b>Mark Webber</b> reacted to your recent post My first tournament today!</p>
+                <div class="nots-active"></div>
+                <p class="time-ago"> 1m ago</p>
+            </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+            <div class="notifs non-seen">
+                <img src="./assets/images/avatar-angela-gray.webp" alt="/" class="nots-img--user">
+                <p class="nots-actions"><b>Angela Gray</b> followed you</p>
+                <div class="nots-active"></div>
+                <p class="time-ago"> 5m ago</p>
+            </div>
 
-  Angela Gray followed you
-  5m ago
+            <div class="notifs">
+                <img src="./assets/images/avatar-jacob-thompson.webp" alt="/" class="nots-img--user">
+                <p class="nots-actions"><b>Jacob Thompson</b> has joined your group Chess Club</p>
+                <!-- <div class="nots-active"></div> -->
+                <p class="time-ago"> 1 day ago</p>
+            </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+            <div class="notifs">
+                <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="/" class="nots-img--user">
+                <p class="nots-actions"><b>Rizky Hasanuddin</b> sent you a private message   
+                <!-- <div class="nots-active"></div> -->
+                <p class="time-ago"> 5 days ago</p>
+            </div>
+            <div class="message">
+                <p class="private-msj"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi commodi, animi odio quae fugit debitis aliquam accusantium reprehenderit saepe provident nesciunt, placeat blanditiis vel amet impedit quo voluptatum! Maxime, quisquam?</p>
+            </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        </section>
+    </main>
+
+  <!-- 
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
   I'm already having lots of fun and improving my game.
 
   Kimberly Smith commented on your picture
@@ -41,11 +71,11 @@
   2 weeks ago
 
   Anna Kim left the group Chess Club
-  2 weeks ago
-  
+  2 weeks ago -->
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sebastian Silva</a>.
   </div>
 </body>
 </html>
